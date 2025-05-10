@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do </title>
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Daily Task Manager</header>
+        <input type="text" id="taskInput" class="task-input" placeholder="Add a new task...">
+        <button id="addTaskBtn" class="task-btn">➕ Add Task</button>
+
+        <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">All 📝</button>
+            <button class="filter-btn" data-filter="active">Active ✔️</button>
+            <button class="filter-btn" data-filter="done">Done ✅</button>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+
+        <div class="task-count" id="taskCount">You have 0 tasks.</div>
+
+        <div class="theme-switch">
+            <button id="lightMode">🌞 Light Mode</button>
+            <button id="darkMode">🌙 Dark Mode</button>
+        </div>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+
+</html>
